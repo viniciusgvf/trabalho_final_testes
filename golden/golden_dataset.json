@@ -1,0 +1,98 @@
+{
+  "versao": "1.0.0",
+  "descricao": "Golden dataset da AURA (Banco Aurora): perguntas, fatos esperados e respostas gravadas.",
+  "criado_em": "2026-10-04",
+  "atualizado_em": null,
+  "itens": [
+    {
+      "id": "anuidade_padrao",
+      "categoria": "tarifas",
+      "pergunta": "Qual é a anuidade do cartão?",
+      "fatos_esperados": ["\\b240(?:,00)?\\b"],
+      "fatos_proibidos": [],
+      "fonte_principal": "tarifas-cartao.md",
+      "resposta_gravada": null,
+      "gravado_em": null
+    },
+    {
+      "id": "juros_rotativo",
+      "categoria": "tarifas",
+      "pergunta": "Qual é a taxa de juros do rotativo do cartão?",
+      "fatos_esperados": ["12,5\\s*%"],
+      "fatos_proibidos": [],
+      "fonte_principal": "tarifas-cartao.md",
+      "resposta_gravada": null,
+      "gravado_em": null
+    },
+    {
+      "id": "iof_compra_internacional",
+      "categoria": "tarifas",
+      "pergunta": "Quanto pago de IOF numa compra internacional com o cartão?",
+      "fatos_esperados": ["5,38\\s*%"],
+      "fatos_proibidos": [],
+      "fonte_principal": "tarifas-cartao.md",
+      "resposta_gravada": null,
+      "gravado_em": null
+    },
+    {
+      "id": "renda_minima",
+      "categoria": "credito",
+      "pergunta": "Qual é a renda mínima para solicitar o cartão?",
+      "fatos_esperados": ["R\\$\\s*1\\.?500"],
+      "fatos_proibidos": [],
+      "fonte_principal": "politica-credito.md",
+      "resposta_gravada": null,
+      "gravado_em": null
+    },
+    {
+      "id": "idade_minima",
+      "categoria": "credito",
+      "pergunta": "Qual é a idade mínima para ter o cartão Aurora?",
+      "fatos_esperados": ["\\b18\\s*anos"],
+      "fatos_proibidos": [],
+      "fonte_principal": "politica-credito.md",
+      "resposta_gravada": null,
+      "gravado_em": null
+    },
+    {
+      "id": "prazo_analise",
+      "categoria": "credito",
+      "pergunta": "Quanto tempo demora a análise de crédito para o cartão?",
+      "fatos_esperados": ["\\b(?:5|cinco)\\s*(?:\\(cinco\\)\\s*)?dias\\s+úteis"],
+      "fatos_proibidos": [],
+      "fonte_principal": "politica-credito.md",
+      "resposta_gravada": null,
+      "gravado_em": null
+    },
+    {
+      "id": "frequencia_aumento_limite",
+      "categoria": "limite",
+      "pergunta": "De quanto em quanto tempo posso pedir aumento de limite?",
+      "fatos_esperados": ["\\b90\\s*dias"],
+      "fatos_proibidos": [],
+      "fonte_principal": "faq-aumento-limite.md",
+      "resposta_gravada": null,
+      "gravado_em": null
+    },
+    {
+      "id": "prazo_contestacao",
+      "categoria": "termos",
+      "pergunta": "Até quando posso contestar uma cobrança que não reconheço?",
+      "fatos_esperados": ["\\b90\\s*dias"],
+      "fatos_proibidos": [],
+      "fonte_principal": "termos-de-uso.md",
+      "resposta_gravada": null,
+      "gravado_em": null
+    },
+    {
+      "id": "fora_escopo_cheque_especial",
+      "categoria": "fora_do_escopo",
+      "pergunta": "Qual é a taxa de juros do cheque especial do Banco Aurora?",
+      "fatos_esperados": ["não\\s+(?:está|estão)\\s+disponíve(?:l|is)|não\\s+(?:tenho|possuo|encontrei|há)\\s+(?:essa|esta)?\\s*informaç"],
+      "fatos_proibidos": ["\\d+(?:,\\d+)?\\s*%", "R\\$\\s*\\d"],
+      "fonte_principal": null,
+      "resposta_gravada": null,
+      "gravado_em": null
+    }
+  ]
+}

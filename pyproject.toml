@@ -1,0 +1,24 @@
+[project]
+name = "trab-final"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Vinicius Gama", email = "ps.viniciusgama@aguiabranca.com.br" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "pytest>=9.1.1",
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+trab-final = "trab_final:main"
+
+[build-system]
+requires = ["uv_build>=0.12.1,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+markers = ["live: roda contra a AURA no ar (regressão de prompts)"]
+addopts = "-m 'not live'"
